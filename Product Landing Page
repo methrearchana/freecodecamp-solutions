@@ -1,0 +1,460 @@
+------------------- HTML CODE --------------------
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Original Trombones</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@100;400;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <div id="nav-flex-wide">
+        <div id="nav-flex-narrow">
+          <img
+            id="header-img"
+            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
+          />
+          <nav id="nav-bar">
+            <a class="nav-link" href="#cards">Features</a>
+            <a class="nav-link" href="#demo">How it works</a>
+            <a class="nav-link" href="#trombones">Pricing</a>
+          </nav>
+        </div>
+      </div>
+      <h1>Handcrafted, home-made masterpieces</h1>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input
+          id="email"
+          name="email"
+          type="email"
+          placeholder="Enter your email address"
+        />
+        <input id="submit" type="submit" value="GET STARTED" />
+      </form>
+    </header>
+    <main>
+      <section id="cards">
+        <article class="card">
+          <div class="icon">
+            <i class="fa fa-3x fa-fire"></i>
+          </div>
+          <div class="description">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icon">
+            <i class="fa fa-3x fa-truck"></i>
+          </div>
+          <div class="description">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="icon">
+            <i class="fa fa-3x fa-battery-full"></i>
+          </div>
+          <div class="description">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </article>
+      </section>
+      <figure id="demo">
+        <iframe
+          id="video"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </figure>
+
+      <section id="trombones">
+        <article class="trombone">
+          <h2>Tenor Trombone</h2>
+          <strong>$600</strong>
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <input type="button" value="SELECT" />
+        </article>
+        <article class="trombone">
+          <h2>Bass Trombone</h2>
+          <strong>$900</strong>
+          <ul>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <input type="button" value="SELECT" />
+        </article>
+        <article class="trombone">
+          <h2>valve Trombone</h2>
+          <strong>$1200</strong>
+          <ul>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Jazz Bands</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ul>
+          <input type="button" value="SELECT" />
+        </article>
+      </section>
+
+      <div id="footer-flex-wide">
+        <footer id="footer">
+          <div id="footer-links">
+            <a class=".footer-link" href="#">Privacy</a>
+            <a class=".footer-link" href="#">Terms</a>
+            <a class=".footer-link" href="#">Contact</a>
+          </div>
+          <p>Copyright 2016, Original Trombones</p>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
+
+----------------------- CSS CODE --------------------
+:root {
+  --background: #f5f5f5;
+  --background-footer: #ddd;
+  --background-trombone: #ddd;
+
+  --text: #111;
+  --text-copyright: gray;
+
+  --button-normal: #F1C40F;
+  --button-hover: orange;
+  --border: #111;
+  --icon: darkorange;
+
+  --nav-footer-width: 120rem;
+  --block-distance: 8rem;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*:not(i) {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+/* GENERAL ELEMENTS */
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background);
+  color: var(--text);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2, p {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-weight: 100;
+}
+
+h2 {
+  font-weight: 900;
+}
+
+img {
+  width: 20rem;
+  align-self: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color);
+  padding: .25rem .5rem;
+}
+
+a:hover {
+  background-color: var(--button-hover);
+}
+
+/* NAVIGATION BAR */
+
+#nav-flex-wide {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+  position: fixed;
+  top: 0;
+  background-color: var(--background);
+  z-index: 1; /* To avoid overlapping with a scaled trombone */
+}
+
+#nav-flex-narrow {
+  width: var(--nav-footer-width);
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 5rem;
+}
+
+#nav-bar {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  text-align: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+/* HEADER AND FORM */
+
+#header > h1 {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+
+input[type="email"] {
+  padding: .5rem 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 20rem;
+  max-width: 100%;
+  display: block;
+  font-size: 100%;
+}
+
+/* FEATURE CARDS */
+
+#cards {
+  margin-top: var(--block-distance);
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.card {
+  display: flex;
+  gap: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5rem;
+  color: var(--icon);
+}
+
+.description {
+  --width: 40rem;
+  width: var(--width);
+  max-width: var(--width);
+  line-height: 150%;
+}
+
+.description p {
+  margin-top: .5rem;
+}
+
+/* VIDEO */
+
+#demo {
+  margin-top: var(--block-distance);
+  width: 30rem;
+  max-width: 100%;
+  height: 15rem;
+}
+
+#demo iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* TROMBONE CARDS */
+
+#trombones {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--block-distance);
+  width: 100%;
+  flex-wrap: wrap;
+  gap: var(--block-distance);
+}
+
+.trombone {
+  border: 1px solid var(--border);
+  padding: 0;
+  width: 20rem;
+  max-width: 100%;
+  transition: .3s ease-in-out;
+}
+
+.trombone:hover {
+  transform: translate(1rem, -1rem) scale(1.05, 1.05);
+}
+
+.trombone h2 {
+  text-align: center;
+  background-color: var(--background-trombone);
+  padding: .5rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--border);
+}
+
+.trombone strong {
+  padding-top: 1rem;
+  text-align: center;
+  display: block;
+  font-size: 150%;
+}
+
+.trombone ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.trombone ul li+li {
+  padding-top: .25rem;
+}
+
+input[type="button"], input[type="submit"] {
+  display: block;
+  margin: 1rem auto;
+  text-transform: uppercase;
+  padding: .5rem 1rem;
+  background-color: var(--button-normal);
+  border: none;
+  font-weight: 900;
+  border-radius: .25rem;
+}
+
+input[type="submit"]:hover, input[type="button"]:hover {
+  background-color: var(--button-hover);
+  cursor: pointer;
+}
+
+/* FOOTER */
+
+#footer-flex-wide {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--background-footer);
+  margin-top: var(--block-distance);
+}
+
+#footer {
+  width: var(--nav-footer-width);
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: .5rem;
+}
+
+#footer-links {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+#footer p {
+  color: var(--text-copyright);
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:480px) {
+  #nav {
+    flex-direction: column;
+  }
+
+  #nav-flex-wide {
+    position: relative;
+    padding-top: 1rem;
+  }
+
+  #nav-flex-narrow {
+    flex-direction: column;
+  }
+
+  #nav-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+
+  #footer-links {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    margin: 1rem auto;
+  }
+
+  #footer {
+    align-items: center;
+  }
+
+  #header > h1 {
+    padding-top: 0;
+  }
+
+  .card .icon {
+    display: none;
+  }
+}
