@@ -1,0 +1,33 @@
+--------------- HTML CODE ----------------
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dr.Norman Borlaug</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<html lang="en">
+  <body>
+    <main id="main">
+      <header>
+        <h1 id="title">Dr. Norman Borlaug</h1>
+        <p>The man who saved a billion lives</p>
+      </header>
+      <div id="img-div">
+        <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/tribute-page-main-image.jpg" alt="main tribute page" id="image">
+        <figcaption id="img-caption">Dr. Norman Borlaug, third from the left, trains biologists in Mexico on how to increase wheat yields - part of his life-long war on hunger.</figcaption>
+      </div>
+      <p id="tribute-info">states "we will have to double the world food supply by 2050." Argues that genetically modified crops are the only way we can meet the demand, as we run out of arable land. Says that GM crops are not inherently dangerous because "we've been genetically modifying plants and animals for a long time. Long before we called it science, people were selecting the best breeds."</p>
+      <a href="https://en.wikipedia.org/wiki/Norman_Borlaug" id="tribute-link" target="_blank">see more info</a>
+    </main>
+  </body>
+</html
+
+------------------ CSS CODE -------------------
+#image{
+  max-width:100%;
+  height:auto;
+  margin:0 auto;
+  display:block;
+}
